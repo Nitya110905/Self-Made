@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Clone</title>
+    <link rel="Icons" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-color: whitesmoke; */
+        }
+
+        .one {
+            width: 100%;
+            height: 35px;
+            background-color: whitesmoke;
+            display: flex;
+            /* margin-bottom: 10px; */
+        }
+
+        .one1 {
+            width: 30px;
+            height: 30px;
+            /* background-color: aqua; */
+            margin-left: 70px;
+            background-image: url(https://cdn.freebiesupply.com/images/large/2x/air-jordan-logo-png-transparent.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .one2 {
+            width: 120px;
+            height: 20px;
+            font-size: small;
+            margin-top: 10px;
+            /* background-color: aqua; */
+            margin-left: 1050px;
+            border: none;
+            border-right: 3px solid black;
+            color: black;
+            text-align: center;
+        }
+
+        .one3 {
+            width: 70px;
+            height: 20px;
+            font-size: small;
+            margin-top: 10px;
+            /* background-color: aqua; */
+            /* margin-left: 900px; */
+            border: none;
+            border-right: 3px solid black;
+            color: black;
+            text-align: center;
+        }
+
+        .two {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            /* position: fixed; */
+            /* margin-top: 50px; */
+            /* flex-direction: row; */
+        }
+
+        .two1 {
+            height: inherit;
+            width: 100px;
+            /* background-color: aqua; */
+            margin-left: 50px;
+            background-image: url(https://media.designrush.com/inspiration_images/134805/conversions/_1512076803_93_Nike-mobile.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-color: white;
+        }
+
+        .two2 {
+            height: 40px;
+            margin-top: 20px;
+            width: 150px;
+            margin-left: 250px;
+            color: black;
+            /* background-color: aqua; */
+            text-align: center;
+            background-color: white;
+        }
+
+        .two2:hover {
+            border-bottom: 2px solid black;
+        }
+
+        .two3 {
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 80px;
+            text-align: center;
+            color: black;
+            background-color: white;
+            /* position: fixed; */
+        }
+
+        .two3:hover {
+            border-bottom: 2px solid black;
+        }
+
+        #ip1 {
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 20px;
+            margin-left: 20px;
+            background-image: url(https://coloringlib.com/wp-content/uploads/2023/08/awesome-nike-shoe-coloring.jpg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            background-color: white;
+        }
+
+        .two4 {
+            margin-left: 20px;
+            height: 50px;
+            margin-top: 15px;
+            background-color: white;
+            background-image: url(https://media.istockphoto.com/id/1184670036/vector/shopping-cart-line-icon-fast-buy-vector-logo.jpg?s=612x612&w=0&k=20&c=zyExmQoKgH4UZTwMa41Zo9x1TzQYcQy_5zQcHaEL0SQ=);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 50px;
+        }
+
+        #two1 {
+            background-image: url(https://images.emojiterra.com/google/noto-emoji/unicode-15/bw/1024px/1f90d.png);
+            height: 30px;
+            margin-top: 25px;
+        }
+
+        #demo {
+            height: 70px;
+            width: 100%;
+            background-color: whitesmoke;
+            display: flex;
+        }
+
+        .carousel-item {
+            /* background-color: aqua; */
+            height: 50px;
+            width: 30%;
+            margin-left: 550px;
+            color: black;
+            margin-top: 10px;
+            text-align: center;
+            font: 20px solid black;
+        }
+
+        u {
+            font-size: 12px;
+        }
+
+        .carous1 {
+            font-size: 11px;
+            height: 30px;
+            width: 100%;
+        }
+
+        #carous1 {
+            /* font: 4px solid black; */
+            font-size: medium;
+        }
+
+        .four {
+            height: 800px;
+            width: 90%;
+            margin: 70px;
+            margin-bottom: 0;
+            /* margin-right: 100px; */
+            margin-top: 20px;
+            background-color: white;
+            background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1423,c_limit/2db1f7bc-191f-4080-b619-9f5880a07170/nike-just-do-it.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .five {
+            margin-top: 30px;
+            /* background-color: antiquewhite; */
+            height: 250px;
+            width: 100%;
+            /* text-align: center; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .five1 {
+            height: 20px;
+            /* background-color: aqua; */
+            width: inherit;
+            text-align: center;
+            font-weight: 500;
+            font-size: large;
+        }
+
+        .five2 {
+            height: 90px;
+            width: inherit;
+            text-align: center;
+            /* background-color: pink; */
+            /* margin-top: 10px; */
+            font-size: 70px;
+            font-weight: bolder;
+            letter-spacing: -5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .five3 {
+            height: 40px;
+            width: 55%;
+            margin-top: 10px;
+            margin-left: 370px;
+            /* background-color: aquamarine; */
+            text-align: center;
+            font-size: large;
+            font-weight: 400;
+        }
+        .five5 {
+            height: 70px;
+            width: 30%;
+            /* background-color: aqua; */
+            margin-top: 20px;
+            margin-left: 550px;
+        }
+        button {
+            height: 50px;
+            width: 200px;
+            background-color: black;
+            margin-bottom: 100px;
+            color: white;
+            border-radius: 45%;
+            /* border-top-left-radius: 30%; */
+            margin-left: 20px;
+        }
+
+        button:hover {
+            /* background-color: rgba(22, 22, 22, 0.862); */
+            filter: opacity(0.8);
+        }
+
+        .six {
+            height: 50px;
+            width: 95%;
+            /* background-color: aqua; */
+            margin-top: 50px;
+            margin-left: 50px;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: left;
+            display: flex;
+        }
+        #six1{
+            margin-top: 200px;
+        }
+        #prev,
+        #next {
+            height: 50px;
+            width: 50px;
+            background-color: whitesmoke;
+            color: rgb(165, 164, 164);
+            border: none;
+        }
+
+        #prev {
+            margin-left: 1150px;
+        }
+
+        #container {
+            height: 600px;
+            margin-top: 10px;
+            margin-left: 35px;
+            /* border: solid black 2px; */
+            overflow-x: scroll;
+            overflow-y: hidden;
+            /* white-space: nowrap; */
+            /* scroll-snap-type: x mandatory; */
+            /* gap: 1rem; */
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            /* scrollbar-color: grey; */
+            scrollbar-width: thin;
+            scroll-behavior: smooth;
+        }
+
+        /* .blue {
+  background-color: lightblue;
+}
+
+.green {
+  background-color: lightgreen;
+  margin-left: 20px;
+} */
+
+        .slide  {
+            display: inline-block;
+            scroll-snap-align: start;
+            margin-top: 20px;
+            width: 430px;
+            /* background-color: aqua; */
+            height: 95%;
+            /* border-left: red 1px solid; */
+        }
+
+        #c1 {
+            margin-left: 15px;
+        }
+
+        #container::-webkit-scrollbar {
+            width: 30px;
+        }
+
+
+        #container::-webkit-scrollbar-thumb {
+            background: rgb(69, 69, 69);
+            /* border: 3px solid blue; */
+        }
+        #img1:hover {
+            transform: scale(1.1);
+        }
+
+        .six1 {
+            margin-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .seven {
+            margin-top: 50px;
+            height: 50px;
+            width: 20%;
+            /* background-color: antiquewhite; */
+            font-size: 27px;
+            font-weight: 400;
+            margin-left: 30px;
+        }
+
+        .seven1 {
+            margin-top: 10px;
+            height: 600px;
+            display: flex;
+            width: 95%;
+            margin-left: 30px;
+            /* background-color: aqua; */
+        }
+
+        .seven2 {
+            height: 600px;
+            width: 33%;
+            background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_467,c_limit/b2a3df8c-d353-47c7-b9ca-d82e66778ea9/nike-just-do-it.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .seven3 {
+            margin-left: 20px;
+            height: 600px;
+            width: 33%;
+            background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_574,c_limit/6b5ec961-fbfd-42a7-a26a-03031a234c06/image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .seven4 {
+            background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_574,c_limit/14626cbd-d790-48a1-aee6-5afc3e86a78a/image.png);
+            margin-left: 20px;
+            height: 600px;
+            width: 33%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .seven2-1 {
+            height: 70px;
+            width: 90%;
+            margin-left: 20px;
+            /* background-color: aquamarine; */
+            color: white;
+            font-weight: 600;
+            font-size: x-large;
+            margin-top: 450px;
+        }
+
+        .but1 {
+            height: 50px;
+            width: 100px;
+            /* margin-top: 500px; */
+            background-color: white;
+            color: black;
+            font-weight: 500;
+            border: none;
+        }
+
+        .but1:hover {
+            /* background-color: rgba(209, 207, 207, 0.797); */
+            filter: opacity(0.8);
+        }
+
+        .eight {
+            margin-top: 50px;
+            height: 50px;
+            width: 20%;
+            /* background-color: antiquewhite; */
+            font-size: 27px;
+            font-weight: 400;
+            margin-left: 30px;
+        }
+
+        .eight1 {
+            margin-top: 20px;
+            margin-left: 30px;
+            height: 750px;
+            width: 98%;
+            /* background-color: aqua; */
+            display: flex;
+        }
+
+        .eight2 {
+            height: inherit;
+            width: 40%;
+            background-image: url();
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #eight2-1 {
+            height: inherit;
+            width: 47%;
+            margin-left: 20px;
+            background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/3c504ea6-a44a-40ec-a800-7dff9caa7fca/nike-just-do-it.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .eight2-1 {
+            height: 70px;
+            width: 100%;
+            /* background-color: aquamarine; */
+            font-size: large;
+        }
+
+        #but1 {
+            margin-top: 50px;
+        }
+
+        #but2 {
+            margin-top: 50px;
+            background-color: black;
+            color: white;
+            width: 120px;
+        }
+
+        .eight2 {
+            height: inherit;
+            width: 47%;
+            background-image: url(https://cdn.nba.com/manage/2022/12/morant-nike-shoe.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .nine {
+            height: 750px;
+            width: 95%;
+            /* background-color: antiquewhite; */
+            margin-left: 30px;
+            margin-top: 20px;
+            background-image: url(https://www.shoepalace.com/cdn/shop/products/3f6c2831d22229b2e64305ece960ca49_2048x2048.jpg?v=1691002788&title=jordan-cu9307-004-air-jordan-7-retro-chambray-mens-lifestyle-shoes-black-blue);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nine1 {
+            /* background-color: aqua; */
+            width: 100%;
+            height: 50px;
+            font-weight: 600;
+            /* margin-bottom: 500px; */
+            font-size: x-large;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        #but3 {
+            height: 500px;
+            width: 120px;
+            padding:10px;
+            /* margin-right: 1200px; */
+            margin-top: 600px;
+            /* top: 100px; */
+            background-color: black;
+            color: white;
+        }
+        /* @import url(https://fonts.googleapis.com/css?family=Anaheim); */
+
+
+/* body{
+	min-height: 100%;
+}
+body{
+	background-image: radial-gradient(mintcream 0%, lightgray 100%);
+} */
+
+.container{
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
+#carousel{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+	animation-play-state: paused;
+}
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 185px;
+	height: 200px;
+	left: 10px;
+	top: 10px;
+	/* background: black; */
+	overflow: hidden;
+	/* border: solid 5px black; */
+    margin-top: 10px;
+    /* margin-bottom: 40px; */
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(60deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(180deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(300deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(360deg) translateZ(288px);}
+
+#img2:hover{
+	/* -webkit-filter: grayscale(1); */
+	/* cursor: hand; */
+	/* transition: all .5s ease; */
+    transform: translate(1.1);
+
+}
+img:hover{
+	/* -webkit-filter: grayscale(0); */
+  transform: scale(1.1,1.1);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+#img2{
+    background-image: url(https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9666574d-f12c-46c8-b04b-fc50b3581e91/air-jordan-1-mid-shoes-BpARGV.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#img3{
+    background-image: url(https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1b0c88ac-202d-4335-a864-1907e95c732b/air-max-dn-shoes-drXjb8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#img4{
+    background-image: url(https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a0d3a009-8c8f-42f3-ba13-c9e8998ac01d/dunk-low-se-shoes-7fnM7D.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#img5{
+    background-image: url(https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/389b709e-5102-4e55-aa5d-07099b500831/blazer-mid-77-vintage-shoes-dNWPTj.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#img6{
+    background-image: url(https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/eb6b777e-669c-4745-98c2-f7bb324e4068/free-metcon-5-workout-shoes-HfHgmZ.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#img7{
+    background-image: url(https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a364b2e6-f179-49f4-a401-6b8e68a42432/pegasus-40-road-running-shoes-4TS8dd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#img8{
+    background-image: url(https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoes-WrLlWX.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.ten{
+    margin-top: 50px;
+    height: 50px;
+    width: 90%;
+    /* background-color: aqua; */
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 30px;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6{
+    display: inline-block;
+            scroll-snap-align: start;
+            margin-top: 20px;
+            width: 550px;
+            /* background-color: aqua; */
+            height: 560px;
+            margin-left: 15px;
+}
+.slide1{
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_657,c_limit/cb28c551-b85b-479f-8fc3-40ad4e7c9ca4/nike-just-do-it.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide2{
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_657,c_limit/100ca749-1a94-4f98-bc43-a58e7e9cdbcf/nike-just-do-it.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide3{
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_657,c_limit/39412611-0af5-4770-8c2e-ef5c23bc6a3d/nike-just-do-it.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide4{
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_657,c_limit/a9767bce-db10-41ff-9eb5-f5daf8bbb3e6/nike-just-do-it.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide5{
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_657,c_limit/37b262a3-c8c7-49e8-a29f-8d46bc8ab950/nike-just-do-it.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide6{
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_657,c_limit/c17ae904-9307-4575-8ac1-ad08adafe17f/nike-just-do-it.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.elev1{
+    font-weight: 400;
+            font-size: large;
+            height: 250px;
+            width: 90%;
+            margin-left: 20px;
+            /* background-color: aquamarine; */
+            margin-top: 400px;
+            margin-bottom: 0;
+            color: white;
+            display: flex;
+            flex-direction: column;
+}
+.elev2{
+    height: 70px;
+    width: 90%;
+    /* margin-left: 20px; */
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+}
+.but5 {
+            height: 50px;
+            width: 100px;
+            /* margin-top: 500px; */
+            background-color: white;
+            color: black;
+            font-weight: 500;
+            border: none;
+            margin-left: 0;
+        }
+        #but5{
+            width: 120px;
+        }
+        .footer{
+            margin-top: 50px;
+            height: 500px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* flex-direction: row-reverse; */
+        }
+        a{
+            text-decoration: none;
+            /* color: black; */
+        }
+        #f1{
+            color: white;
+        }
+        #f2{
+            color: grey;
+        }
+        #f2:hover{
+            color: white;
+        }
+        .footer1{
+            height: 100px;
+            font-size: 17px;
+            margin: 70px;
+            font-weight: 600;
+            font-family: monospace;
+            width: 15%;
+            margin-right: 20px;
+            /* background-color: aqua; */
+        }
+        .footer2{
+            height: 400px;
+            font-size: 17px;
+            margin-top: 70px;
+            margin-left: 30px;
+            font-weight: 600;
+            font-family: monospace;
+            width: 18%;
+            /* background-color: aqua; */
+            display: flex;
+            flex-direction: column;
+        }
+        .foot21{
+            margin-top: 15px;
+            height: inherit;
+            width: 100%;
+            /* background-color: antiquewhite; */
+            color: grey;
+            font-size: 15px;
+        }
+        .footer3{
+            height: 40px;
+            margin: 70px;
+            margin-left: 250px;
+            width: 15%;
+            /* background-color: aqua; */
+        }
+        #a1{
+            color: black;
+        }
+        i{
+            color: grey;
+            margin-left: 20px;
+        }
+        i:hover{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <div class="one1"></div>
+        <div class="one2"><a href="" id="a1">Find A Store</a></div>
+        <div class="one3"><a href="" id="a1">Help</a></div>
+        <div class="one3"><a href="" id="a1">Join Us</a></div>
+        <div class="one3"><a href="" id="a1">Sign In</a></div>
+    </div>
+    <div class="two">
+        <div class="two1"></div>
+        <div class="two2">New & Featured</div>
+        <div class="two3">Men</div>
+        <div class="two3">Women</div>
+        <div class="two3">Kids</div>
+        <div class="two3">Sale</div>
+        <div class="two3">Customize</div>
+        <div class="two3">SNKRS</div>
+        <input type="text" id="ip1" placeholder="    Search">
+        <div class="two4" id="two1"></div>
+        <div class="two4"></div>
+    </div>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">Save Up To 40% <br><u>Shop All Our New Markdowns</u></div>
+            <div class="carousel-item">Move,Shop,Customize & Celebrate With Us.
+                <div class="carous1">No matter what you feel like doing today,It's better as a Member <br><u
+                        id="carous1">Join Us</u></div>
+            </div>
+        </div>
+    </div>
+    <div class="four"></div>
+    <div class="five">
+        <div class="five1">Air Max 90 LVG</div>
+        <div class="five2">LEVEL UP YOUR LOOK</div>
+        <div class="five3">Push your game to new heights in bold fashion. Styled by New Jeans, the Air Max 90 LV8 makes
+            a serious statement about maximum style.</div>
+        <!-- <div class="five4">statement about maximum style.</div> -->
+        <div class="five5"><button>Shop NewJeans' Picks</button><button>Shop Air Max 90 LV8</button></div>
+    </div>
+    <div class="six">Icons of Air
+        <button id="prev" data-nav-direction="-1"><
+            </button>
+                <button id="next" data-nav-direction="1">></button>
+    </div>
+    <scroll-slider>
+        <div id="container" data-scroll-pos="0">
+            <div class="slide" id="c1"><img id="img1"
+                    src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_584,c_limit/f845e319-c486-40f6-bc81-d7c4a2a5531f/image.jpg"
+                    alt="" height="500px" width="400px">
+                <div class="six1">Air Max 90</div>
+            </div>
+            <div class="slide" id="c2"><img id="img1"
+                    src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_300,c_limit/a376ae33-4ec4-45fd-af75-199dd14c5603/nike-just-do-it.jpg"
+                    alt="" height="500px" width="400px">
+                <div class="six1">Air Max 1</div>
+            </div>
+            <div class="slide" id="c3"><img id="img1"
+                    src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_300,c_limit/2496b1dd-4748-41ef-ad0f-ffe4360ef28d/nike-just-do-it.jpg"
+                    alt="" height="500px" width="400px">
+                <div class="six1">Air Max Plus</div>
+            </div>
+            <div class="slide" id="c4"><img id="img1"
+                    src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_300,c_limit/cba0fff2-daa7-49bc-b480-79925bfd69bf/nike-just-do-it.jpg"
+                    alt="" height="500px" width="400px">
+                <div class="six1">Air Max Pulse</div>
+            </div>
+            <div class="slide" id="c5"><img id="img1"
+                    src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_300,c_limit/3c688bda-5dd7-44a4-8f11-b99a1c9474ec/nike-just-do-it.jpg"
+                    alt="" height="500px" width="400px">
+                <div class="six1">Shop All Air Max</div>
+            </div>
+        </div>
+    </scroll-slider>    
+        <div class="seven">Featured</div>
+        <div class="seven1">
+            <div class="seven2">
+                <div class="seven2-1">Nike Invincible 3</div><button class="but1">Shop</button>
+            </div>
+            <div class="seven3">
+                <div class="seven2-1">Nike One Top</div><button class="but1">Shop</button>
+            </div>
+            <div class="seven4">
+                <div class="seven2-1">Nike ACG</div><button class="but1">Shop</button>
+            </div>
+        </div>
+        <div class="eight">Don't Miss</div>
+        <div class="eight1">
+            <div class="eight2">
+                <div class="seven2-1">Ja 1 EP & LeBron NXXT Gen <div class="eight2-1">
+                        Ja Morant unveils signature shoe with Nike</div>
+                </div><button class="but1" id="but2">Get It First</button>
+            </div>
+            <div class="eight2" id="eight2-1">
+                <div class="seven2-1">Nike Metcon 9 <div class="eight2-1">For lifters, trainers, go getters.From
+                        deadlifts to squats,box jumps to rows.</div>
+                </div><button class="but1" id="but1">Shop</button>
+            </div>
+        </div>
+        <div class="seven">Jordan Basketball</div>
+        <div class="nine">
+            <div class="nine1">AIR JORDAN 7 RETRO CHAMBRAY</div><button id="but3">Get It ASAP!</button>
+        </div>
+        <div class="five">
+            <div class="five1">Jordan Apparel</div>
+            <div class="five2">SP24 LOOKBOOK</div>
+            <div class="five3">New season, new vibes. Modern takes on classic jordan silhouettes are here for the whole family.</div>
+            <div class="five5"><button>Shop Men's</button><button>Shop Women's</button></div>
+        </div>
+        <div class="ten">Classic Spotlights</div>
+        <div class="container">
+            <div id="carousel">
+                <!-- <figure><img src="http://lorempixel.com/186/116/nature/1" alt=""></figure> -->
+                <!-- <figure><img src="http://lorempixel.com/186/116/nature/2" alt=""></figure> -->
+                <figure id="img2"></figure>
+                <figure id="img3"></figure>
+                <figure id="img4"></figure>
+                <figure id="img5"></figure>
+                <figure id="img6"></figure>
+                <figure id="img7"></figure>
+                <figure id="img8"></figure>
+            </div>
+        </div>
+        <div class="six" id="six1">Member&nbsp;Benefits
+            <button id="prev" data-nav-direction="-1"><
+                </button>
+                    <button id="next" data-nav-direction="1">></button>
+        </div>
+        <scroll-slider>
+            <div id="container" data-scroll-pos="0">
+                <div class="slide1">
+                    <div class="elev1">Member Product
+                        <div class="elev2">Your Exclusive Access</div><button class="but5">Shop</button>
+                    </div>    
+                </div>
+                <div class="slide2">
+                    <div class="elev1">Nike By You
+                        <div class="elev2">Your Customisation Service</div><button class="but5">Customize</button>
+                    </div>    
+                </div>
+                <div class="slide3">
+                    <div class="elev1">Member Rewards
+                        <div class="elev2">How We Say Thank You</div><button class="but5">Celebrate</button>
+                    </div>
+                </div>    
+                <div class="slide4">
+                    <div class="elev1">Member Dyas
+                        <div class="elev2">A Celebration Of You</div><button class="but5" id="but5">Learn More</button>
+                    </div>
+                </div>    
+                <div class="slide5">
+                    <div class="elev1">Sport & Wellness Apps
+                        <div class="elev2">Movement Where You Are</div><button class="but5">Move</button>
+                    </div>
+                </div>
+                <div class="slide6">
+                    <div class="elev1">SNKRS
+                        <div class="elev2">Your Ultimate Sneaker <br>Community</div><button class="but5">Explore</button>
+                    </div>    
+                </div>
+            </div>
+        </scroll-slider>
+        <div class="footer">
+            <div class="footer1"><a href="" id="f1">FIND A STORE <br><br> BECOME A MEMBER <br><br> Send Us Feedback </a></div>
+            <div class="footer2"><a href="" id="f1">HELP</a>
+                <div class="foot21"><a href="" id="f2">Get Help</a><br><br><a href="" id="f2">Order Status</a><br><br><a href="" id="f2">Delivery</a><br><br><a href="" id="f2">Returns</a><br><br><a href="" id="f2">Payment Options</a><br><br><a href="" id="f2">Contact Us On Nike.com Inquiries</a><br><br><a href="" id="f2">Contact Us On All Other Inquiries</a></div>
+            </div>
+            <div class="footer2"><a href="" id="f1">Company</a>
+                <div class="foot21"><a href="" id="f2">About Nike</a><br><br><a href="" id="f2">News</a><br><br><a href="" id="f2">Careers</a><br><br><a href="" id="f2">Investors</a><br><br><a href="" id="f2">Sustainability</a></div>
+            </div>
+            <div class="footer3"><a href="" id="f2"><i class="fa-brands fa-twitter fa-2x"></i></a><a href="" id="f2"><i class="fa-brands fa-facebook fa-2x"></i></a><a href="" id="f2"><i class="fa-brands fa-youtube fa-2x"></i></a><a href="" id="f2"><i class="fa-brands fa-instagram fa-2x"></i></a></div>
+        </div>
+    <script>
+        class ScrollSlider extends HTMLElement {
+            constructor() {
+                super();
+
+                this.buttons = Array.from(this.querySelectorAll('button'));
+
+                this.prev = this.querySelector('#prev');
+                this.prev.addEventListener('click', () => this.navigate(this.prev));
+
+                this.next = this.querySelector('#next');
+                this.next.addEventListener('click', () => this.navigate(this.next));
+
+
+                this.slides = Array.from(this.querySelectorAll('.slide'));
+
+                this.sliderContainer = this.querySelector('#container');
+            }
+
+            navigate(elem) {
+                var direction = elem.dataset.navDirection;
+                var sliderContainer = this.sliderContainer;
+                var slideWidth = this.slides[0].getBoundingClientRect().width + 16;
+                var scrollPos = sliderContainer.dataset.scrollPos;
+
+                sliderContainer.scrollLeft += slideWidth * direction;
+
+                if (sliderContainer.scrollLeft == scrollPos) {
+                    if (direction < 0) {
+                        sliderContainer.scrollLeft = sliderContainer.scrollWidth;
+                    } else if (direction > 0) {
+                        sliderContainer.scrollLeft = 0;
+                    }
+                }
+                sliderContainer.dataset.scrollPos = sliderContainer.scrollLeft;
+
+
+            }
+        }
+        customElements.define('scroll-slider', ScrollSlider);
+    </script>
+</body>
+</html>
